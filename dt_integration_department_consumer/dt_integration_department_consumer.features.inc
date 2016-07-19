@@ -12,7 +12,7 @@ function dt_integration_department_consumer_default_integration_consumer() {
   $items['department'] = entity_import('integration_consumer', '{
     "entity_bundle" : "department",
     "backend" : "couchdb",
-    "resource" : "department",
+    "resource" : "departments",
     "mapping" : [],
     "settings" : { "plugin" : { "mapping" : {
           "title" : "title_field",
@@ -21,8 +21,7 @@ function dt_integration_department_consumer_default_integration_consumer() {
           "main_task" : "field_department_tasks",
           "description" : "field_core_description",
           "introduction" : "field_core_introduction",
-          "abbreviation" : "field_core_abbreviation",
-          "canonical_url" : "url"
+          "abbreviation" : "field_core_abbreviation"
         }
       }
     },
